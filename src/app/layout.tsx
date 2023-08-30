@@ -1,8 +1,5 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Anshul Kanwar',
@@ -16,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-zinc-800 text-white max-w-xl mx-auto`}>{children}</body>
+      <body className="bg-zinc-800 text-white max-w-xl mx-5 sm:mx-auto">{children}</body>
     </html>
   )
 }
