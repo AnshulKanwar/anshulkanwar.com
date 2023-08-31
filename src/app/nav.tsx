@@ -1,13 +1,10 @@
+import Logo from "@/components/logo";
 import Link from "next/link";
 
-export default function Header() {
+export default function Nav() {
   return (
-    <div className="flex justify-between">
-      <Link href="/">
-        <h1 className="font-script text-3xl font-bold transition hover:text-white">
-          Anshul Kanwar
-        </h1>
-      </Link>
+    <div className="my-14 flex justify-between">
+      <Logo />
       <nav className="flex gap-8">
         <Link
           href="https://resume.anshulkanwar.com"
@@ -17,7 +14,7 @@ export default function Header() {
         >
           Resume
         </Link>
-        <Link href="#" className="transition hover:text-white">
+        <Link href="/blog" className="transition hover:text-white">
           Blog
         </Link>
       </nav>
