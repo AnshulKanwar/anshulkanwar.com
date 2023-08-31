@@ -1,6 +1,5 @@
 import About from "./about";
 import Contact from "./contact";
-import Header from "./header";
 import Projects from "./projects";
 
 export default function Home() {
