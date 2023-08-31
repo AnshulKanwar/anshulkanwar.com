@@ -5,6 +5,6 @@
 - [x] Add Projects 
 - [ ] Add light mode
 - [ ] Blog
-- [ ] Add a "Drop a message" form
-- [ ] Make responsive 
+- [x] Add a "Drop a message" form
+- [x] Make responsive 
 - [ ] Add logo 
