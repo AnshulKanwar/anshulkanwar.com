@@ -7,3 +7,4 @@
 - [ ] Blog
 - [ ] Add a "Drop a message" form
 - [ ] Make responsive 
+- [ ] Add logo 

@@ -31,7 +31,7 @@ const projects = [
 export default function Projects() {
   return (
     <div>
-      <h2 className="mb-4 text-xl font-bold">Projects</h2>
+      <h2 className="mb-6 text-xl font-bold">Projects</h2>
       <div className="grid grid-cols-3 gap-x-16 gap-y-6">
         {projects.map(({ name, description, href }) => (
           <div key={name}>
