@@ -31,8 +31,8 @@ const projects = [
 export default function Projects() {
   return (
     <div>
-      <h2 className="text-xl font-bold">Projects</h2>
-      <div className="mt-4 grid grid-cols-3 gap-x-16 gap-y-6">
+      <h2 className="mb-4 text-xl font-bold">Projects</h2>
+      <div className="grid grid-cols-3 gap-x-16 gap-y-6">
         {projects.map(({ name, description, href }) => (
           <div key={name}>
             <Link
@@ -46,7 +46,7 @@ export default function Projects() {
             <p>{description}</p>
           </div>
         ))}
-        <div>
+        <div className="self-center">
           <span>
             And many more on my{" "}
             <Link
