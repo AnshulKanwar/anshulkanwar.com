@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-stone-900 text-stone-400 max-w-2xl mx-5 sm:mx-auto pb-20">
+      <body className="bg-stone-900 text-stone-400 max-w-2xl mx-5 md:mx-auto pb-20">
         <Nav />
         {children}
       </body>

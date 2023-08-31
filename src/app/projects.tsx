@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <div>
       <h2 className="mb-6 text-xl font-bold">Projects</h2>
-      <div className="grid grid-cols-3 gap-x-16 gap-y-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-16 gap-y-6">
         {projects.map(({ name, description, href }) => (
           <div key={name}>
             <Link

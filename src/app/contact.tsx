@@ -24,8 +24,8 @@ export default function Contact() {
   return (
     <div>
       <h2 className="mb-6 text-xl font-bold">Contact</h2>
-      <div className="grid grid-cols-[1fr_2fr] gap-10">
-        <div className="flex flex-col gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-10">
+        <div className="flex flex-row justify-between sm:flex-col gap-3">
           {contacts.map(({ name, href, icon }) => (
             <div key={name}>
               <Link
