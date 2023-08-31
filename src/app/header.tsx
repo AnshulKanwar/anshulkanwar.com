@@ -8,9 +8,19 @@ export default function Header() {
           Anshul Kanwar
         </h1>
       </Link>
-      <Link href="#" className="transition hover:text-white">
-        Blog
-      </Link>
+      <nav className="flex gap-8">
+        <Link
+          href="https://resume.anshulkanwar.com"
+          target="_blank"
+          rel="noopner noreferrer"
+          className="transition hover:text-white"
+        >
+          Resume
+        </Link>
+        <Link href="#" className="transition hover:text-white">
+          Blog
+        </Link>
+      </nav>
     </div>
   );
 }
