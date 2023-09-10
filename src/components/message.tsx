@@ -39,7 +39,7 @@ export default function Message() {
   return (
     <form
       onSubmit={sendMessage}
-      className="relative bg-stone-800 rounded-lg overflow-hidden"
+      className="relative bg-stone-800 rounded overflow-hidden"
     >
       <textarea
         value={message}
