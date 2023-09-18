@@ -1,9 +1,10 @@
 "use client";
 
-import { Loader, Send } from "lucide-react";
 import { useState } from "react";
 import { Dancing_Script } from "next/font/google";
-
+import Image from "next/image";
+import send from "./icons/send.svg";
+import load from "./icons/load.svg";
 const dancing_script = Dancing_Script({ subsets: ["latin"] });
 
 export default function Message() {
@@ -35,7 +36,7 @@ export default function Message() {
     }
 
     setLoading(false);
-    setMessage("")
+    setMessage("");
   };
 
   return (
@@ -63,12 +64,12 @@ export default function Message() {
         >
           {loading ? (
             <>
-              <Loader size={16} className="animate-spin" />
+              <Image src={load} width={16} className="animate-spin" alt="Loading" />
               Sending
             </>
           ) : (
             <>
-              <Send size={16} />
+              <Image src={send} width={16} alt="Send" />
               Send
             </>
           )}

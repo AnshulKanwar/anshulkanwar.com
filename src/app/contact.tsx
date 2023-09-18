@@ -2,10 +2,10 @@ import Message from "@/components/message";
 import Image from "next/image";
 import Link from "next/link";
 
-import github from "@/app/icons/github.svg"
-import mail from "@/app/icons/mail.svg"
-import x from "@/app/icons/x.svg"
-import linkedin from "@/app/icons/linkedin.svg"
+import github from "@/components/icons/github.svg"
+import mail from "@/components/icons/mail.svg"
+import x from "@/components/icons/x.svg"
+import linkedin from "@/components/icons/linkedin.svg"
 
 const contacts = [
   {
