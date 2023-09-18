@@ -1,8 +1,10 @@
 "use client";
 
-import { sql } from "@vercel/postgres";
 import { Loader, Send } from "lucide-react";
 import { useState } from "react";
+import { Dancing_Script } from "next/font/google";
+
+const dancing_script = Dancing_Script({ subsets: ["latin"] });
 
 export default function Message() {
   const [message, setMessage] = useState("");
@@ -45,7 +47,7 @@ export default function Message() {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Drop a message (don't worry its anonymous) ..."
-        className={`w-full h-full p-4 font-script text-lg bg-stone-800 text-stone-400
+        className={`w-full h-full p-4 ${dancing_script.className} text-lg bg-stone-800 text-stone-400
                   placeholder:text-base placeholder:font-sans placeholder:text-stone-600
                   resize-none focus:outline-none`}
       />

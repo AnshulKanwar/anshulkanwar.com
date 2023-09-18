@@ -1,9 +1,15 @@
 import Link from "next/link";
 
+import { Dancing_Script } from "next/font/google";
+
+const dancing_script = Dancing_Script({ subsets: ["latin"] });
+
 export default function Logo() {
   return (
     <Link href="/">
-      <h1 className="font-script text-xl sm:text-3xl font-bold transition hover:text-white">
+      <h1
+        className={`${dancing_script.className} text-xl sm:text-3xl transition hover:text-white`}
+      >
         Anshul Kanwar
       </h1>
     </Link>
