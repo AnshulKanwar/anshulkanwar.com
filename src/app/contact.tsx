@@ -2,31 +2,40 @@ import Message from "@/components/message";
 import Image from "next/image";
 import Link from "next/link";
 
-import github from "@/components/icons/github.svg"
-import mail from "@/components/icons/mail.svg"
-import x from "@/components/icons/x.svg"
-import linkedin from "@/components/icons/linkedin.svg"
+import github from "@/components/icons/github.svg";
+import mail from "@/components/icons/mail.svg";
+import x from "@/components/icons/x.svg";
+import linkedin from "@/components/icons/linkedin.svg";
 
 const contacts = [
   {
     name: "Github",
     href: "https://github.com/AnshulKanwar",
-    icon: <Image src={github} width={18} alt="Github.com" />
+    icon: (
+      <Image src="/icons/github.svg" width={18} height={18} alt="Github.com" />
+    ),
   },
   {
     name: "Mail",
     href: "mailto:work@anshulkanwar.com",
-    icon: <Image src={mail} width={18} alt="mail" />
+    icon: <Image src="/icons/mail.svg" width={18} height={18} alt="mail" />,
   },
   {
     name: "X",
     href: "https://x.com/_0xanshul",
-    icon: <Image src={x} width={18} alt="X.com"/>
+    icon: <Image src="/icons/x.svg" width={18} height={18} alt="X.com" />,
   },
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/anshul-kanwar/",
-    icon: <Image src={linkedin} width={18} alt="linkedin.com"/>
+    icon: (
+      <Image
+        src="/icons/linkedin.svg"
+        width={18}
+        height={18}
+        alt="linkedin.com"
+      />
+    ),
   },
 ];
 

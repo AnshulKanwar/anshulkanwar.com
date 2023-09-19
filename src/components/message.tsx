@@ -3,8 +3,6 @@
 import { useState } from "react";
 import { Dancing_Script } from "next/font/google";
 import Image from "next/image";
-import send from "./icons/send.svg";
-import load from "./icons/load.svg";
 const dancing_script = Dancing_Script({ subsets: ["latin"] });
 
 export default function Message() {
@@ -64,12 +62,18 @@ export default function Message() {
         >
           {loading ? (
             <>
-              <Image src={load} width={16} className="animate-spin" alt="Loading" />
+              <Image
+                src="/icons/load.svg"
+                width={16}
+                height={18}
+                className="animate-spin"
+                alt="Loading"
+              />
               Sending
             </>
           ) : (
             <>
-              <Image src={send} width={16} alt="Send" />
+              <Image src="/icons/send.svg" width={16} height={18} alt="Send" />
               Send
             </>
           )}
