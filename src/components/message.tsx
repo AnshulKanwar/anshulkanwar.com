@@ -10,12 +10,10 @@ const dancing_script = Dancing_Script({ subsets: ["latin"] });
 export default function Message() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   const sendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setError(null);
 
     if (!message) {
       return;
@@ -32,7 +30,6 @@ export default function Message() {
 
     if (error) {
       console.error(error);
-      setError(error);
     }
 
     setLoading(false);
@@ -64,7 +61,12 @@ export default function Message() {
         >
           {loading ? (
             <>
-              <Image src={load} width={16} className="animate-spin" alt="Loading" />
+              <Image
+                src={load}
+                width={16}
+                className="animate-spin"
+                alt="Loading"
+              />
               Sending
             </>
           ) : (
