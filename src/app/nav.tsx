@@ -14,9 +14,6 @@ export default function Nav() {
         >
           Resume
         </Link>
-        <Link href="/blog" className="transition hover:text-white">
-          Blog
-        </Link>
       </nav>
     </div>
   );
